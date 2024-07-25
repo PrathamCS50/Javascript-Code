@@ -48,3 +48,39 @@ myFunc();
 console.log("Type of MyFunc : " + typeof myFunc);
 console.log("Type of myObj : " + typeof myObj);
 console.log("Type of MyFunc : " + typeof myFunc);
+
+console.log(
+  "++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++"
+);
+
+// Stack (Primitive Data Type) -> Reference is Created
+// Heap (Non Primitive data type) -> change in original memory only
+
+let name = "abc";
+let name2 = name;
+console.log(name2);
+
+name2 = "Pratham";
+
+console.log(name2);
+console.log(name);
+
+let user = {
+  name: "abc",
+  email: "sampleMail@gmail.com",
+  age: 22,
+};
+
+let user2 = user;
+console.log("User 1 : ");
+console.log(user);
+user2.age = 11;
+user2.name = "Pratham";
+console.log("User 2 : ");
+console.log(user2);
+console.log("Afterwards");
+console.log("User 1 : ");
+console.log(user);
+console.log(
+  "This shows that heap / Non-primitive data types uses referencing method, there will a change in the original value"
+);

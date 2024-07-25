@@ -32,3 +32,15 @@ let num = 33;
 let sn = String(num);
 console.log(num); //33
 console.log(typeof sn);
+
+// **************Operation****************
+
+let val = 3;
+let negVal = -val;
+console.log(negVal);
+
+let str1 = "Hello";
+let str2 = "Pratham";
+console.log(str1 + " " + str2);
+
+console.log(3 + 4 * 5 / 3);
